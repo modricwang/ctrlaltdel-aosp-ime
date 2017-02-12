@@ -50,7 +50,7 @@
 
         <service
             android:name="com.basket.aosp.ime.dictionarypack.DictionaryService"
-            android:label="@string/dictionary_service_name"></service>
+            android:label="@string/dictionary_service_name" />
 
         <!-- Activities -->
         <activity
@@ -70,7 +70,7 @@
             android:name="com.basket.aosp.ime.latin.permissions.PermissionsActivity"
             android:exported="false"
             android:taskAffinity=""
-            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
             android:name="com.basket.aosp.ime.latin.setup.SetupWizardActivity"
@@ -165,6 +165,6 @@
             android:exported="false"
             android:grantUriPermissions="true"
             android:label="@string/dictionary_provider_name"
-            android:multiprocess="false"></provider>
+            android:multiprocess="false" />
     </application>
 </manifest>

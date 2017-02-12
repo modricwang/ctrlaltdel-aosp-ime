@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+#include <src/dictionary/property/word_property.h>
 #include "offdevice_intermediate_dict/offdevice_intermediate_dict.h"
 
 #include "offdevice_intermediate_dict/offdevice_intermediate_dict_pt_node.h"

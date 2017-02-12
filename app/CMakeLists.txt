@@ -18,7 +18,6 @@ add_library( # Sets the name of the library.
              # Provides a relative path to your source file(s).
              # Associated headers in the same location as their source
              # file are automatically included.
-             # src/main/cpp/native-lib.cpp;
              src/main/cpp/dicttoolkit/dict_toolkit_main.cpp;
              src/main/cpp/dicttoolkit/src/command_executors/diff_executor.cpp;
              src/main/cpp/dicttoolkit/src/command_executors/header_executor.cpp;
@@ -115,18 +114,44 @@ add_library( # Sets the name of the library.
              src/main/cpp/jni/src/utils/char_utils.cpp;
              src/main/cpp/jni/src/utils/jni_data_utils.cpp;
              src/main/cpp/jni/src/utils/log_utils.cpp;
-             src/main/cpp/jni/src/utils/time_keeper.cpp;
-             src/main/cpp/jni/com_basket_aosp_ime_keyboard_ProximityInfo.cpp;
-             src/main/cpp/jni/com_basket_aosp_ime_latin_BinaryDictionary.cpp;
-             src/main/cpp/jni/com_basket_aosp_ime_latin_BinaryDictionaryUtils.cpp;
-             src/main/cpp/jni/com_basket_aosp_ime_latin_DicTraverseSession.cpp;
-             src/main/cpp/jni/jni_common.cpp;
-             src/main/cpp/native-lib.cpp)
+             src/main/cpp/jni/src/utils/time_keeper.cpp)
 
 # Specifies a path to native header files.
-include_directories(src/main/cpp/;
+include_directories(src/main/cpp/dicttoolkit/src/command_executors/;
+                    src/main/cpp/dicttoolkit/src/;
+                    src/main/cpp/dicttoolkit/src/offdevice_intermediate_dict/;
+                    src/main/cpp/dicttoolkit/src/utils/;
+                    src/main/cpp/jni/;
                     src/main/cpp/jni/src/;
-                    src/main/cpp/dicttoolkit/src/;)
+                    src/main/cpp/jni/src/dictionary/header/;
+                    src/main/cpp/jni/src/dictionary/interface/;
+                    src/main/cpp/jni/src/dictionary/property/;
+                    src/main/cpp/jni/src/dictionary/structure/backward/v402/bigram/;
+                    src/main/cpp/jni/src/dictionary/structure/backward/v402/content/;
+                    src/main/cpp/jni/src/dictionary/structure/backward/v402/shortcut/;
+                    src/main/cpp/jni/src/dictionary/structure/backward/v402/;
+                    src/main/cpp/jni/src/dictionary/structure/;
+                    src/main/cpp/jni/src/dictionary/structure/pt_common/bigram/;
+                    src/main/cpp/jni/src/dictionary/structure/pt_common/;
+                    src/main/cpp/jni/src/dictionary/structure/pt_common/shortcut/;
+                    src/main/cpp/jni/src/dictionary/structure/v2/bigram/;
+                    src/main/cpp/jni/src/dictionary/structure/v2/;
+                    src/main/cpp/jni/src/dictionary/structure/v2/shortcut/;
+                    src/main/cpp/jni/src/dictionary/structure/v4/content/;
+                    src/main/cpp/jni/src/dictionary/structure/v4/shortcut/;
+                    src/main/cpp/jni/src/dictionary/structure/v4/;
+                    src/main/cpp/jni/src/dictionary/utils/;
+                    src/main/cpp/jni/src/suggest/core/dicnode/;
+                    src/main/cpp/jni/src/suggest/core/dicnode/internal/;
+                    src/main/cpp/jni/src/suggest/core/dictionary/;
+                    src/main/cpp/jni/src/suggest/core/layout/;
+                    src/main/cpp/jni/src/suggest/core/policy/;
+                    src/main/cpp/jni/src/suggest/core/result/;
+                    src/main/cpp/jni/src/suggest/core/;
+                    src/main/cpp/jni/src/suggest/policyimpl/gesture/;
+                    src/main/cpp/jni/src/suggest/policyimpl/typing/;
+                    src/main/cpp/jni/src/suggest/policyimpl/utils/;
+                    src/main/cpp/jni/src/utils/)
 
 # Searches for a specified prebuilt library and stores the path as a
 # variable. Because system libraries are included in the search path by
