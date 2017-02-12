@@ -17,11 +17,10 @@
 #ifndef LATINIME_DICT_TOOLKIT_OFFDEVICE_INTERMEDIATE_DICT_H
 #define LATINIME_DICT_TOOLKIT_OFFDEVICE_INTERMEDIATE_DICT_H
 
-#include <src/dictionary/property/word_property.h>
 #include "dict_toolkit_defines.h"
 #include "offdevice_intermediate_dict/offdevice_intermediate_dict_header.h"
 #include "offdevice_intermediate_dict/offdevice_intermediate_dict_pt_node_array.h"
-//#include "suggest/core/dictionary/property/word_property.h"
+#include "src/dictionary/property/word_property.h"
 #include "utils/int_array_view.h"
 
 namespace latinime {
