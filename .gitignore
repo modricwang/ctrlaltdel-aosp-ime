@@ -1,0 +1,12 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild/
+.idea/
+basket-android-aosp-ime-common/build
+basket-android-aosp-ime-imecommon/build
