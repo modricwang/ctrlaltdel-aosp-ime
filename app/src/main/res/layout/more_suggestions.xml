@@ -25,7 +25,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
 >
-    <com.basket.aosp.ime.latin.suggestions.MoreSuggestionsView
+    <io.github.ctrlaltdel.aosp.ime.latin.suggestions.MoreSuggestionsView
         android:id="@+id/more_suggestions_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -28,10 +28,10 @@ add_library( # Sets the name of the library.
              src/main/cpp/dicttoolkit/src/utils/arguments_parser.cpp;
              src/main/cpp/dicttoolkit/src/utils/command_utils.cpp;
              src/main/cpp/dicttoolkit/src/utils/utf8_utils.cpp;
-             src/main/cpp/jni/com_basket_aosp_ime_keyboard_ProximityInfo.cpp;
-             src/main/cpp/jni/com_basket_aosp_ime_latin_BinaryDictionary.cpp;
-             src/main/cpp/jni/com_basket_aosp_ime_latin_BinaryDictionaryUtils.cpp;
-             src/main/cpp/jni/com_basket_aosp_ime_latin_DicTraverseSession.cpp;
+             src/main/cpp/jni/io_github_ctrlaltdel_aosp_ime_keyboard_ProximityInfo.cpp;
+             src/main/cpp/jni/io_github_ctrlaltdel_aosp_ime_latin_BinaryDictionary.cpp;
+             src/main/cpp/jni/io_github_ctrlaltdel_aosp_ime_latin_BinaryDictionaryUtils.cpp;
+             src/main/cpp/jni/io_github_ctrlaltdel_aosp_ime_latin_DicTraverseSession.cpp;
              src/main/cpp/jni/jni_common.cpp;
              src/main/cpp/jni/src/dictionary/header/header_policy.cpp;
              src/main/cpp/jni/src/dictionary/header/header_read_write_utils.cpp;

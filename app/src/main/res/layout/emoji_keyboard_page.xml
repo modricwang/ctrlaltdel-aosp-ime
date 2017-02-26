@@ -18,7 +18,7 @@
 */
 -->
 
-<com.basket.aosp.ime.keyboard.emoji.EmojiPageKeyboardView
+<io.github.ctrlaltdel.aosp.ime.keyboard.emoji.EmojiPageKeyboardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/emoji_keyboard_page"
     android:layoutDirection="ltr"

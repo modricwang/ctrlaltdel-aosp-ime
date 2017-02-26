@@ -1,1 +1,1 @@
-include ':app', ':basket-aosp-ime-common', ':basket-aosp-ime-imecommon'
+include ':app', ':ctrlaltdel-aosp-ime-common', ':ctrlaltdel-aosp-ime-imecommon'

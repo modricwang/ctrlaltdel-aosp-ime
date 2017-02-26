@@ -18,10 +18,10 @@
 
 #include "jni_common.h"
 
-#include "com_basket_aosp_ime_keyboard_ProximityInfo.h"
-#include "com_basket_aosp_ime_latin_BinaryDictionary.h"
-#include "com_basket_aosp_ime_latin_BinaryDictionaryUtils.h"
-#include "com_basket_aosp_ime_latin_DicTraverseSession.h"
+#include "io_github_ctrlaltdel_aosp_ime_keyboard_ProximityInfo.h"
+#include "io_github_ctrlaltdel_aosp_ime_latin_BinaryDictionary.h"
+#include "io_github_ctrlaltdel_aosp_ime_latin_BinaryDictionaryUtils.h"
+#include "io_github_ctrlaltdel_aosp_ime_latin_DicTraverseSession.h"
 #include "defines.h"
 
 /*

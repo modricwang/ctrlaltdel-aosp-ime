@@ -26,7 +26,7 @@
         <item>@string/keyboard_theme_holo_blue</item>
     </string-array>
     <!-- An element must be a keyboard theme id of
-         {@link com.basket.aosp.ime.keyboard.KeyboardTheme#THEME_ID_ICS} etc. -->
+         {@link io.github.ctrlaltdel.aosp.ime.keyboard.KeyboardTheme#THEME_ID_ICS} etc. -->
     <integer-array name="keyboard_theme_ids" translatable="false">
         <item>3</item>
         <item>4</item>

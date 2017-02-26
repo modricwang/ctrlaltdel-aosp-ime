@@ -1,4 +1,4 @@
-package com.basket.aosp.ime;
+package io.github.ctrlaltdel.aosp.ime;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.basket.aosp.ime", appContext.getPackageName());
+        assertEquals("io.github.ctrlaltdel.aosp.ime", appContext.getPackageName());
     }
 }

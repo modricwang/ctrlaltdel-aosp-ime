@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.basket.aosp.ime">
+    package="io.github.ctrlaltdel.aosp.ime">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
@@ -27,7 +27,7 @@
 
         <!-- Services -->
         <service
-            android:name="com.basket.aosp.ime.latin.LatinIME"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.LatinIME"
             android:label="@string/english_ime_name"
             android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
@@ -39,7 +39,7 @@
         </service>
 
         <service
-            android:name="com.basket.aosp.ime.latin.spellcheck.AndroidSpellCheckerService"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.spellcheck.AndroidSpellCheckerService"
             android:label="@string/spell_checker_service_name"
             android:permission="android.permission.BIND_TEXT_SERVICE">
             <intent-filter>
@@ -51,12 +51,12 @@
         </service>
 
         <service
-            android:name="com.basket.aosp.ime.dictionarypack.DictionaryService"
+            android:name="io.github.ctrlaltdel.aosp.ime.dictionarypack.DictionaryService"
             android:label="@string/dictionary_service_name" />
 
         <!-- Activities -->
         <activity
-            android:name="com.basket.aosp.ime.latin.setup.SetupActivity"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.setup.SetupActivity"
             android:icon="@drawable/ic_launcher_keyboard"
             android:label="@string/english_ime_name"
             android:launchMode="singleTask"
@@ -69,13 +69,13 @@
         </activity>
 
         <activity
-            android:name="com.basket.aosp.ime.latin.permissions.PermissionsActivity"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.permissions.PermissionsActivity"
             android:exported="false"
             android:taskAffinity=""
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
-            android:name="com.basket.aosp.ime.latin.setup.SetupWizardActivity"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.setup.SetupWizardActivity"
             android:clearTaskOnLaunch="true"
             android:label="@string/english_ime_name"
             android:theme="@style/platformActivityTheme">
@@ -85,7 +85,7 @@
         </activity>
 
         <activity
-            android:name="com.basket.aosp.ime.latin.settings.SettingsActivity"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.settings.SettingsActivity"
             android:label="@string/english_ime_settings"
             android:theme="@style/platformSettingsTheme">
             <intent-filter>
@@ -94,7 +94,7 @@
         </activity>
 
         <activity
-            android:name="com.basket.aosp.ime.latin.spellcheck.SpellCheckerSettingsActivity"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.spellcheck.SpellCheckerSettingsActivity"
             android:label="@string/android_spell_checker_settings"
             android:theme="@style/platformSettingsTheme">
             <intent-filter>
@@ -103,7 +103,7 @@
         </activity>
 
         <activity
-            android:name="com.basket.aosp.ime.dictionarypack.DictionarySettingsActivity"
+            android:name="io.github.ctrlaltdel.aosp.ime.dictionarypack.DictionarySettingsActivity"
             android:label="@string/dictionary_settings_title"
             android:theme="@style/platformSettingsTheme"
             android:uiOptions="splitActionBarWhenNarrow">
@@ -113,7 +113,7 @@
         </activity>
 
         <activity
-            android:name="com.basket.aosp.ime.dictionarypack.DownloadOverMeteredDialog"
+            android:name="io.github.ctrlaltdel.aosp.ime.dictionarypack.DownloadOverMeteredDialog"
             android:label="@string/dictionary_install_over_metered_network_prompt"
             android:theme="@style/platformActivityTheme">
             <intent-filter>
@@ -123,11 +123,11 @@
 
         <!-- Unexported activity used for tests. -->
         <activity
-            android:name="com.basket.aosp.ime.latin.settings.TestFragmentActivity"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.settings.TestFragmentActivity"
             android:exported="false" />
 
         <!-- Broadcast receivers -->
-        <receiver android:name="com.basket.aosp.ime.latin.SystemBroadcastReceiver">
+        <receiver android:name="io.github.ctrlaltdel.aosp.ime.latin.SystemBroadcastReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -137,24 +137,24 @@
         </receiver>
 
         <receiver
-            android:name="com.basket.aosp.ime.latin.DictionaryPackInstallBroadcastReceiver"
+            android:name="io.github.ctrlaltdel.aosp.ime.latin.DictionaryPackInstallBroadcastReceiver"
             android:exported="false">
             <intent-filter>
-                <action android:name="com.basket.aosp.ime.dictionarypack.aosp.UNKNOWN_CLIENT" />
+                <action android:name="io.github.ctrlaltdel.aosp.ime.dictionarypack.aosp.UNKNOWN_CLIENT" />
             </intent-filter>
         </receiver>
 
-        <receiver android:name="com.basket.aosp.ime.dictionarypack.EventHandler">
+        <receiver android:name="io.github.ctrlaltdel.aosp.ime.dictionarypack.EventHandler">
             <intent-filter>
                 <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
                 <action android:name="android.intent.action.DATE_CHANGED" />
-                <action android:name="com.basket.aosp.ime.dictionarypack.aosp.UPDATE_NOW" />
-                <action android:name="com.basket.aosp.ime.dictionarypack.aosp.INIT_AND_UPDATE_NOW" />
+                <action android:name="io.github.ctrlaltdel.aosp.ime.dictionarypack.aosp.UPDATE_NOW" />
+                <action android:name="io.github.ctrlaltdel.aosp.ime.dictionarypack.aosp.INIT_AND_UPDATE_NOW" />
             </intent-filter>
         </receiver>
 
         <!-- Broadcast receiver for AccountManager#LOGIN_ACCOUNTS_CHANGED_ACTION. -->
-        <receiver android:name="com.basket.aosp.ime.latin.accounts.AccountsChangedReceiver">
+        <receiver android:name="io.github.ctrlaltdel.aosp.ime.latin.accounts.AccountsChangedReceiver">
             <intent-filter>
                 <action android:name="android.accounts.LOGIN_ACCOUNTS_CHANGED" />
             </intent-filter>
@@ -162,7 +162,7 @@
 
         <!-- Content providers -->
         <provider
-            android:name="com.basket.aosp.ime.dictionarypack.DictionaryProvider"
+            android:name="io.github.ctrlaltdel.aosp.ime.dictionarypack.DictionaryProvider"
             android:authorities="@string/authority"
             android:exported="false"
             android:grantUriPermissions="true"

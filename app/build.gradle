@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.basket.aosp.ime"
+        applicationId "io.github.ctrlaltdel.aosp.ime"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
@@ -41,6 +41,6 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.1'
     testCompile 'junit:junit:4.12'
-    compile project(path: ':basket-aosp-ime-common')
-    compile project(path: ':basket-aosp-ime-imecommon')
+    compile project(path: ':ctrlaltdel-aosp-ime-common')
+    compile project(path: ':ctrlaltdel-aosp-ime-imecommon')
 }

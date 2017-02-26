@@ -8,5 +8,5 @@
 /captures
 .externalNativeBuild/
 .idea/
-basket-android-aosp-ime-common/build
-basket-android-aosp-ime-imecommon/build
+ctrlaltdel-android-aosp-ime-common/build
+ctrlaltdel-android-aosp-ime-imecommon/build

@@ -1,4 +1,4 @@
-package com.basket.aosp.ime;
+package io.github.ctrlaltdel.aosp.ime;
 
 import org.junit.Test;
 

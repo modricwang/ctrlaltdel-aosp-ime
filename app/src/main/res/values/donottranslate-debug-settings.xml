@@ -18,8 +18,8 @@
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Title for Basket AOSP Keyboard debug settings activity / dialog -->
-    <string name="english_ime_debug_settings">Basket AOSP Keyboard Debug settings</string>
+    <!-- Title for Ctrlaltdel AOSP Keyboard debug settings activity / dialog -->
+    <string name="english_ime_debug_settings">Ctrlaltdel AOSP Keyboard Debug settings</string>
     <string name="prefs_debug_mode">Debug Mode</string>
     <string name="prefs_force_non_distinct_multitouch">Force non-distinct multitouch</string>
     <string name="prefs_should_show_lxx_suggestion_ui">Show LXX suggestion UI</string>

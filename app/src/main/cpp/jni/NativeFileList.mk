@@ -13,10 +13,10 @@
 # limitations under the License.
 
 LATIN_IME_JNI_SRC_FILES := \
-    com_basket_aosp_ime_keyboard_ProximityInfo.cpp \
-    com_basket_aosp_ime_latin_BinaryDictionary.cpp \
-    com_basket_aosp_ime_latin_BinaryDictionaryUtils.cpp \
-    com_basket_aosp_ime_latin_DicTraverseSession.cpp \
+    io_github_ctrlaltdel_aosp_ime_keyboard_ProximityInfo.cpp \
+    io_github_ctrlaltdel_aosp_ime_latin_BinaryDictionary.cpp \
+    io_github_ctrlaltdel_aosp_ime_latin_BinaryDictionaryUtils.cpp \
+    io_github_ctrlaltdel_aosp_ime_latin_DicTraverseSession.cpp \
     jni_common.cpp
 
 LATIN_IME_CORE_SRC_FILES := \

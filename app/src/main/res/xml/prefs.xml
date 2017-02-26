@@ -19,27 +19,27 @@
     xmlns:latin="http://schemas.android.com/apk/res-auto"
     android:key="english_ime_settings">
     <PreferenceScreen
-        android:fragment="com.basket.aosp.ime.latin.settings.PreferencesSettingsFragment"
+        android:fragment="io.github.ctrlaltdel.aosp.ime.latin.settings.PreferencesSettingsFragment"
         android:title="@string/settings_screen_preferences"
         android:key="screen_preferences" />
     <PreferenceScreen
-        android:fragment="com.basket.aosp.ime.latin.settings.AccountsSettingsFragment"
+        android:fragment="io.github.ctrlaltdel.aosp.ime.latin.settings.AccountsSettingsFragment"
         android:title="@string/settings_screen_accounts"
         android:key="screen_accounts" />
     <PreferenceScreen
-        android:fragment="com.basket.aosp.ime.latin.settings.AppearanceSettingsFragment"
+        android:fragment="io.github.ctrlaltdel.aosp.ime.latin.settings.AppearanceSettingsFragment"
         android:title="@string/settings_screen_appearance"
         android:key="screen_appearance" />
     <PreferenceScreen
-        android:fragment="com.basket.aosp.ime.latin.settings.GestureSettingsFragment"
+        android:fragment="io.github.ctrlaltdel.aosp.ime.latin.settings.GestureSettingsFragment"
         android:title="@string/settings_screen_gesture"
         android:key="screen_gesture" />
     <PreferenceScreen
-        android:fragment="com.basket.aosp.ime.latin.settings.CorrectionSettingsFragment"
+        android:fragment="io.github.ctrlaltdel.aosp.ime.latin.settings.CorrectionSettingsFragment"
         android:title="@string/settings_screen_correction"
         android:key="screen_correction" />
     <PreferenceScreen
-        android:fragment="com.basket.aosp.ime.latin.settings.AdvancedSettingsFragment"
+        android:fragment="io.github.ctrlaltdel.aosp.ime.latin.settings.AdvancedSettingsFragment"
         android:title="@string/settings_screen_advanced"
         android:key="screen_advanced" />
 </PreferenceScreen>
