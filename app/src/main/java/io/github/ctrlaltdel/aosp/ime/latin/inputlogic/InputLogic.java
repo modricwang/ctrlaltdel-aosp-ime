@@ -44,6 +44,7 @@ import io.github.ctrlaltdel.aosp.ime.latin.Suggest;
 import io.github.ctrlaltdel.aosp.ime.latin.Suggest.OnGetSuggestedWordsCallback;
 import io.github.ctrlaltdel.aosp.ime.latin.SuggestedWords;
 import io.github.ctrlaltdel.aosp.ime.latin.SuggestedWords.SuggestedWordInfo;
+import io.github.ctrlaltdel.aosp.ime.latin.UIHandler;
 import io.github.ctrlaltdel.aosp.ime.latin.WordComposer;
 import io.github.ctrlaltdel.aosp.ime.latin.common.Constants;
 import io.github.ctrlaltdel.aosp.ime.latin.common.InputPointers;
@@ -232,7 +233,7 @@ public final class InputLogic {
      * @return the complete transaction object
      */
     public InputTransaction onTextInput(final SettingsValues settingsValues, final Event event,
-            final int keyboardShiftMode, final LatinIME.UIHandler handler) {
+            final int keyboardShiftMode, final UIHandler handler) {
         final String rawText = event.getTextToCommit().toString();
         final InputTransaction inputTransaction = new InputTransaction(settingsValues, event,
                 SystemClock.uptimeMillis(), mSpaceState,
@@ -272,7 +273,7 @@ public final class InputLogic {
     // interface
     public InputTransaction onPickSuggestionManually(final SettingsValues settingsValues,
             final SuggestedWordInfo suggestionInfo, final int keyboardShiftState,
-            final int currentKeyboardScriptId, final LatinIME.UIHandler handler) {
+            final int currentKeyboardScriptId, final UIHandler handler) {
         final SuggestedWords suggestedWords = mSuggestedWords;
         final String suggestion = suggestionInfo.mWord;
         // If this is a punctuation picked from the suggestion strip, pass it to onCodeInput
@@ -436,7 +437,7 @@ public final class InputLogic {
      */
     public InputTransaction onCodeInput(final SettingsValues settingsValues,
             @Nonnull final Event event, final int keyboardShiftMode,
-            final int currentKeyboardScriptId, final LatinIME.UIHandler handler) {
+            final int currentKeyboardScriptId, final UIHandler handler) {
         mWordBeingCorrectedByCursor = null;
         final Event processedEvent = mWordComposer.processEvent(event);
         final InputTransaction inputTransaction = new InputTransaction(settingsValues,
@@ -491,7 +492,7 @@ public final class InputLogic {
     }
 
     public void onStartBatchInput(final SettingsValues settingsValues,
-            final KeyboardSwitcher keyboardSwitcher, final LatinIME.UIHandler handler) {
+            final KeyboardSwitcher keyboardSwitcher, final UIHandler handler) {
         mWordBeingCorrectedByCursor = null;
         mInputLogicHandler.onStartBatchInput();
         handler.showGesturePreviewAndSuggestionStrip(
@@ -567,7 +568,7 @@ public final class InputLogic {
         ++mAutoCommitSequenceNumber;
     }
 
-    public void onCancelBatchInput(final LatinIME.UIHandler handler) {
+    public void onCancelBatchInput(final UIHandler handler) {
         mInputLogicHandler.onCancelBatchInput();
         handler.showGesturePreviewAndSuggestionStrip(
                 SuggestedWords.getEmptyInstance(), true /* dismissGestureFloatingPreviewText */);
@@ -642,7 +643,7 @@ public final class InputLogic {
      * @param inputTransaction The transaction in progress.
      */
     private void handleFunctionalEvent(final Event event, final InputTransaction inputTransaction,
-            final int currentKeyboardScriptId, final LatinIME.UIHandler handler) {
+            final int currentKeyboardScriptId, final UIHandler handler) {
         switch (event.mKeyCode) {
             case Constants.CODE_DELETE:
                 handleBackspaceEvent(event, inputTransaction, currentKeyboardScriptId);
@@ -716,7 +717,7 @@ public final class InputLogic {
      */
     private void handleNonFunctionalEvent(final Event event,
             final InputTransaction inputTransaction,
-            final LatinIME.UIHandler handler) {
+            final UIHandler handler) {
         inputTransaction.setDidAffectContents();
         switch (event.mCodePoint) {
             case Constants.CODE_ENTER:
@@ -761,7 +762,7 @@ public final class InputLogic {
      */
     private void handleNonSpecialCharacterEvent(final Event event,
             final InputTransaction inputTransaction,
-            final LatinIME.UIHandler handler) {
+            final UIHandler handler) {
         final int codePoint = event.mCodePoint;
         mSpaceState = SpaceState.NONE;
         if (inputTransaction.mSettingsValues.isWordSeparator(codePoint)
@@ -878,7 +879,7 @@ public final class InputLogic {
      * @param inputTransaction The transaction in progress.
      */
     private void handleSeparatorEvent(final Event event, final InputTransaction inputTransaction,
-            final LatinIME.UIHandler handler) {
+            final UIHandler handler) {
         final int codePoint = event.mCodePoint;
         final SettingsValues settingsValues = inputTransaction.mSettingsValues;
         final boolean wasComposingWord = mWordComposer.isComposingWord();
@@ -2092,7 +2093,7 @@ public final class InputLogic {
      * @param separator the separator that's causing the commit to happen.
      */
     private void commitCurrentAutoCorrection(final SettingsValues settingsValues,
-            final String separator, final LatinIME.UIHandler handler) {
+            final String separator, final UIHandler handler) {
         // Complete any pending suggestions query first
         if (handler.hasPendingUpdateSuggestions()) {
             handler.cancelUpdateSuggestionStrip();
@@ -2221,7 +2222,7 @@ public final class InputLogic {
      * @return whether true if the caches were successfully reset, false otherwise.
      */
     public boolean retryResetCachesAndReturnSuccess(final boolean tryResumeSuggestions,
-            final int remainingTries, final LatinIME.UIHandler handler) {
+            final int remainingTries, final UIHandler handler) {
         final boolean shouldFinishComposition = mConnection.hasSelection()
                 || !mConnection.isCursorPositionKnown();
         if (!mConnection.resetCachesUponCursorMoveAndReturnSuccess(
