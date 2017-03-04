@@ -24,7 +24,6 @@
 #include "command_executors/header_executor.h"
 #include "command_executors/info_executor.h"
 #include "command_executors/makedict_executor.h"
-#include "utils/command_utils.h"
 
 namespace latinime {
 namespace dicttoolkit {

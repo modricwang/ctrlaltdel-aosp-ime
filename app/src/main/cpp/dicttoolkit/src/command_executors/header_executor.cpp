@@ -16,8 +16,6 @@
 
 #include "command_executors/header_executor.h"
 
-#include <cstdio>
-
 namespace latinime {
 namespace dicttoolkit {
 

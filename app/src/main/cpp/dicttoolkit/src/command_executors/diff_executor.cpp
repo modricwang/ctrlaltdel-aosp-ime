@@ -16,8 +16,6 @@
 
 #include "command_executors/diff_executor.h"
 
-#include <cstdio>
-
 namespace latinime {
 namespace dicttoolkit {
 
