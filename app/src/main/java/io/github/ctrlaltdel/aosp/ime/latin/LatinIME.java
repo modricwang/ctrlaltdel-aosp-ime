@@ -117,7 +117,6 @@ public class LatinIME extends InputMethodService implements KeyboardActionListen
     private static final int EXTENDED_TOUCHABLE_REGION_HEIGHT = 100;
     private static final int PERIOD_FOR_AUDIO_AND_HAPTIC_FEEDBACK_IN_KEY_REPEAT = 2;
 
-
     /**
      * The name of the scheme used by the Package Manager to warn of a new package installation,
      * replacement or removal.

@@ -135,7 +135,7 @@
     <string name="not_now" msgid="6172462888202790482">"Ոչ հիմա"</string>
     <string name="custom_input_style_already_exists" msgid="8008728952215449707">"Մուտքագրման այսպիսի ոճ արդեն գոյություն ունի՝ <xliff:g id="INPUT_STYLE_NAME">%s</xliff:g>"</string>
     <string name="prefs_keypress_vibration_duration_settings" msgid="7918341459947439226">"Սեղմման թրթռոցի տևողություն"</string>
-    <string name="prefs_keypress_sound_volume_settings" msgid="6027007337036891623">"Սեղմման ձայնի բարձրությունը"</string>
+    <string name="prefs_keypress_sound_volume_settings" msgid="6027007337036891623">"Սեղմման ձայնի ուժգնությունը"</string>
     <string name="prefs_key_longpress_timeout_settings" msgid="6102240298932897873">"Ստեղնի երկար սեղմման ուշացում"</string>
     <string name="prefs_enable_emoji_alt_physical_key" msgid="5963640002335470112">"Ֆիզիկական ստեղնաշարի զմայլիկ"</string>
     <string name="prefs_enable_emoji_alt_physical_key_summary" msgid="5259484820941627827">"Alt ստեղնը ցուցադրում է զմայլիկների պնակը"</string>
@@ -158,15 +158,14 @@
     <string name="setup_finish_action" msgid="276559243409465389">"Ավարտված"</string>
     <string name="show_setup_wizard_icon" msgid="5008028590593710830">"Ցույց տալ հավելվածի պատկերակը"</string>
     <string name="show_setup_wizard_icon_summary" msgid="4119998322536880213">"Ցուցադրել հավելվածի պատկերակը թողարկչում"</string>
-    <string name="app_name" msgid="6320102637491234792">"Բառարանի մատակարար"</string>
     <string name="dictionary_provider_name" msgid="3027315045397363079">"Բառարանի մատակարար"</string>
     <string name="dictionary_service_name" msgid="6237472350693511448">"Բառարանի ծառայություն"</string>
     <string name="download_description" msgid="6014835283119198591">"Տեղեկություններ բառարանների թարմացման մասին"</string>
     <string name="dictionary_settings_title" msgid="8091417676045693313">"Հավելյալ բառարաններ"</string>
     <string name="dictionary_install_over_metered_network_prompt" msgid="3587517870006332980">"Բառարանն առկա է"</string>
     <string name="dictionary_settings_summary" msgid="5305694987799824349">"Բառարանների կարգավորումներ"</string>
-    <string name="user_dictionaries" msgid="3582332055892252845">"Օգտվողի բառարաններ"</string>
-    <string name="default_user_dict_pref_name" msgid="1625055720489280530">"Օգտվողի բառարան"</string>
+    <string name="user_dictionaries" msgid="3582332055892252845">"Օգտատիրոջ բառարաններ"</string>
+    <string name="default_user_dict_pref_name" msgid="1625055720489280530">"Օգտատիրոջ բառարան"</string>
     <string name="dictionary_available" msgid="4728975345815214218">"Բառարանն առկա է"</string>
     <string name="dictionary_downloading" msgid="2982650524622620983">"Այս պահին ներբեռնվում է"</string>
     <string name="dictionary_installed" msgid="8081558343559342962">"Տեղադրված է"</string>
@@ -204,7 +203,7 @@
     <string name="user_dict_settings_edit_dialog_title" msgid="3765774633869590352">"Խմբագրել բառը"</string>
     <string name="user_dict_settings_context_menu_edit_title" msgid="6812255903472456302">"Խմբագրել"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="8142932447689461181">"Ջնջել"</string>
-    <string name="user_dict_settings_empty_text" msgid="6889278304342592383">"Օգտվողի բառարանում ոչ մի բառ չկա: Բառեր ավելացնելու համար հպեք Ավելացնել (+) կոճակին:"</string>
+    <string name="user_dict_settings_empty_text" msgid="6889278304342592383">"Օգտատիրոջ բառարանում ոչ մի բառ չկա: Բառեր ավելացնելու համար հպեք Ավելացնել (+) կոճակին:"</string>
     <string name="user_dict_settings_all_languages" msgid="8276126583216298886">"Բոլոր լեզուներով"</string>
     <string name="user_dict_settings_more_languages" msgid="7131268499685180461">"Ավելի շատ լեզուներով..."</string>
     <string name="user_dict_settings_delete" msgid="110413335187193859">"Ջնջել"</string>

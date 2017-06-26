@@ -45,7 +45,7 @@
     <string name="cloud_sync_cancel" msgid="5877481252150919037">"ਰੱਦ ਕਰੋ"</string>
     <string name="cloud_sync_opt_in_text" msgid="9176039655776298248">"ਤੁਹਾਡਾ ਨਿੱਜੀ ਸ਼ਬਦਕੋਸ਼ ਸਿੰਕ ਕੀਤਾ ਜਾਏਗਾ ਅਤੇ Google ਸਰਵਰਾਂ ਤੇ ਬੈਕ ਅਪ ਕੀਤਾ ਜਾਏਗਾ। ਸ਼ਬਦ ਬਾਰੰਬਾਰਤਾ ਦੀ ਅੰਕੜੇ ਸੰਬੰਧੀ ਜਾਣਕਾਰੀ ਸਾਡੇ ਉਤਪਾਦਾਂ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਇਕੱਤਰ ਕੀਤੀ ਜਾ ਸਕਦੀ ਹੈ। ਸਾਰੀ ਜਾਣਕਾਰੀ ਦਾ ਇਕੱਤਰੀਕਰਨ ਅਤੇ ਵਰਤੋਂ "<a href="https://www.google.com/policies/privacy">"Google ਦੀ ਪ੍ਰਾਈਵੇਸੀ ਨੀਤੀ"</a>"ਦੇ ਮੁਤਾਬਕ ਹੋਵੇਗੀ।"</string>
     <string name="add_account_to_enable_sync" msgid="7836932571852055265">"ਕਿਰਪਾ ਕਰਕੇ ਇਸ ਵਿਸ਼ੇਸ਼ਤਾ ਨੂੰ ਸਮਰੱਥ ਬਣਾਉਣ ਲਈ ਇਸ ਡੀਵਾਈਸ ਤੇ ਇੱਕ Google ਖਾਤਾ ਸ਼ਾਮਲ ਕਰੋ।"</string>
-    <string name="cloud_sync_summary_disabled_work_profile" msgid="1381770407303129164">"ਬਿਜਨਸ ਖਾਤਿਆਂ ਲਈ Google ਐਪਸ ਵਾਲੀਆਂ ਡਿਵਾਈਸਾਂ ਲਈ ਸਿੰਕ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"</string>
+    <string name="cloud_sync_summary_disabled_work_profile" msgid="1381770407303129164">"ਬਿਜਨਸ ਖਾਤਿਆਂ ਲਈ Google ਐਪਾਂ ਵਾਲੀਆਂ ਡਿਵਾਈਸਾਂ ਲਈ ਸਿੰਕ ਉਪਲਬਧ ਨਹੀਂ ਹੈ"</string>
     <string name="include_other_imes_in_language_switch_list" msgid="4533689960308565519">"ਹੋਰਾਂ ਇਨਪੁਟ ਵਿਧੀਆਂ ਤੇ ਸਵਿਚ ਕਰੋ"</string>
     <string name="include_other_imes_in_language_switch_list_summary" msgid="840637129103317635">"ਭਾਸ਼ਾ ਸਵਿਚ ਕੁੰਜੀ ਹੋਰਾਂ ਇਨਪੁਟ ਵਿਧੀਆਂ ਨੂੰ ਵੀ ਸ਼ਾਮਲ ਕਰਦੀ ਹੈ"</string>
     <string name="show_language_switch_key" msgid="5915478828318774384">"ਭਾਸ਼ਾ ਸਵਿਚ ਕੁੰਜੀ"</string>
@@ -158,7 +158,6 @@
     <string name="setup_finish_action" msgid="276559243409465389">"ਪੂਰਾ ਹੋਇਆ"</string>
     <string name="show_setup_wizard_icon" msgid="5008028590593710830">"ਐਪ ਚਿੰਨ੍ਹ ਦਿਖਾਓ"</string>
     <string name="show_setup_wizard_icon_summary" msgid="4119998322536880213">"ਲਾਂਚਰ ਵਿੱਚ ਐਪਲੀਕੇਸ਼ਨ ਚਿੰਨ੍ਹ ਪ੍ਰਦਰਸ਼ਿਤ ਕਰੋ"</string>
-    <string name="app_name" msgid="6320102637491234792">"ਸ਼ਬਦਕੋਸ਼ ਪ੍ਰਦਾਤਾ"</string>
     <string name="dictionary_provider_name" msgid="3027315045397363079">"ਸ਼ਬਦਕੋਸ਼ ਪ੍ਰਦਾਤਾ"</string>
     <string name="dictionary_service_name" msgid="6237472350693511448">"ਸ਼ਬਦਕੋਸ਼ ਸੇਵਾ"</string>
     <string name="download_description" msgid="6014835283119198591">"ਸ਼ਬਦਕੋਸ਼ ਅਪਡੇਟ ਜਾਣਕਾਰੀ"</string>
@@ -189,7 +188,7 @@
     <string name="dict_available_notification_title" msgid="4583842811218581658">"<xliff:g id="LANGUAGE_NAME">%1$s</xliff:g> ਲਈ ਇੱਕ ਸ਼ਬਦਕੋਸ਼ ਉਪਲਬਧ ਹੈ"</string>
     <string name="dict_available_notification_description" msgid="1075194169443163487">"ਸਮੀਖਿਆ ਕਰਨ ਅਤੇ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਦਬਾਓ"</string>
     <string name="toast_downloading_suggestions" msgid="6128155879830851739">"ਡਾਊਨਲੋਡਿੰਗ: <xliff:g id="LANGUAGE_NAME">%1$s</xliff:g> ਲਈ ਸੁਝਾਅ ਜਲਦੀ ਹੀ ਤਿਆਰ ਹੋਣਗੇ।"</string>
-    <string name="version_text" msgid="2715354215568469385">"ਵਰਜਨ <xliff:g id="VERSION_NUMBER">%1$s</xliff:g>"</string>
+    <string name="version_text" msgid="2715354215568469385">"ਰੂਪ <xliff:g id="VERSION_NUMBER">%1$s</xliff:g>"</string>
     <string name="user_dict_settings_add_menu_title" msgid="1254195365689387076">"ਜੋੜੋ"</string>
     <string name="user_dict_settings_add_dialog_title" msgid="4096700390211748168">"ਸ਼ਬਦਕੋਸ਼ ਵਿੱਚ ਜੋੜੋ"</string>
     <string name="user_dict_settings_add_screen_title" msgid="5818914331629278758">"ਵਾਕਾਂਸ਼"</string>
