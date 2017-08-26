@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.github.ctrlaltdel.aosp.imecommon;
+package io.github.ctrlaltdel.aosp.ime.imecommon;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;

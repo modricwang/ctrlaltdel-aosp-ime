@@ -31,7 +31,7 @@ import io.github.ctrlaltdel.aosp.ime.R;
 import io.github.ctrlaltdel.aosp.ime.latin.define.ProductionFlags;
 import io.github.ctrlaltdel.aosp.ime.latin.utils.ApplicationUtils;
 import io.github.ctrlaltdel.aosp.ime.latin.utils.FeedbackUtils;
-import io.github.ctrlaltdel.aosp.imecommon.InputMethodSettingsFragment;
+import io.github.ctrlaltdel.aosp.ime.imecommon.InputMethodSettingsFragment;
 
 public final class SettingsFragment extends InputMethodSettingsFragment {
     // We don't care about menu grouping.
