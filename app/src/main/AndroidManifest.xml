@@ -26,7 +26,7 @@
         <!-- Services -->
         <service
             android:name="io.github.ctrlaltdel.aosp.ime.latin.LatinIME"
-            android:label="@string/english_ime_name"
+            android:label="@string/ctrl_alt_del_ime_name"
             android:permission="android.permission.BIND_INPUT_METHOD">
             <intent-filter>
                 <action android:name="android.view.InputMethod" />
@@ -56,7 +56,7 @@
         <activity
             android:name="io.github.ctrlaltdel.aosp.ime.latin.setup.SetupActivity"
             android:icon="@drawable/ic_launcher_keyboard"
-            android:label="@string/english_ime_name"
+            android:label="@string/ctrl_alt_del_ime_name"
             android:launchMode="singleTask"
             android:noHistory="true"
             android:theme="@style/platformActivityTheme">
@@ -75,7 +75,7 @@
         <activity
             android:name="io.github.ctrlaltdel.aosp.ime.latin.setup.SetupWizardActivity"
             android:clearTaskOnLaunch="true"
-            android:label="@string/english_ime_name"
+            android:label="@string/ctrl_alt_del_ime_name"
             android:theme="@style/platformActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
