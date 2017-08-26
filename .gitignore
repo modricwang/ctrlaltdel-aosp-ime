@@ -1,12 +1,8 @@
 *.iml
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+/.idea
 .DS_Store
 /build
 /captures
 .externalNativeBuild/
-.idea/
-ctrlaltdel-android-aosp-ime-common/build
-ctrlaltdel-android-aosp-ime-imecommon/build
